@@ -153,7 +153,7 @@ jobs:
           cyclonedx merge
           --input-files 
           sboms-${{matrix.project}}/${{ matrix.project }}_bom.json
-          sboms-${{matrix.project}}/${{ matrix.project }}_docker_bom.json
+          sboms-${{matrix.project}}/${{ matrix.project }}-docker_bom.json
           --output-file ${{matrix.project}}_merged_sbom.json
           --name ${{ matrix.project }}
           --version "build-${{ github.run_number }}"
